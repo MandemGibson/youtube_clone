@@ -1,0 +1,29 @@
+.headerOptions {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.headerOptions:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+}
+
+.headerOption__icons {
+    object-fit: contain;
+    height: 30px !important;
+    width: 30px !important;
+    margin-right: 5px;
+}
+
+.headerOption__profile {
+    object-fit: contain;
+    height: 35px !important;
+    width: 35px !important;
+}
