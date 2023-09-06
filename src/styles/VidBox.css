@@ -1,0 +1,75 @@
+.vidbox {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.vidbox:hover {
+    cursor: pointer
+}
+
+.container {
+    height: 180px;
+    width: 320px;
+    background-color: gray;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.container>img {
+    object-fit: fill;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.below_container {
+    display: flex;
+    align-items: normal;
+}
+
+/* .vidbox__avatar {
+    position: static;
+} */
+
+.vidtext {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    max-width: 250px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.vidtext>h1 {
+    font-size: 17px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.sub {
+    display: flex;
+    align-items: center;
+}
+
+.vidbox__icon {
+    font-size: 15px !important;
+    color: gray;
+    margin-left: 5px;
+}
+
+.sub>h3 {
+    font-size: 15px;
+    color: gray;
+    font-weight: 400;
+}
+
+.latter {
+    display: flex;
+}
+
+.latter>p {
+    color: gray;
+    font-size: 15px;
+}

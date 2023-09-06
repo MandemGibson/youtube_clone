@@ -1,0 +1,30 @@
+.videoFeed {
+    display: flex;
+    flex-direction: column;
+}
+
+.suggestionBox__side {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.suggestions {
+    display: flex;
+    margin-left: 10px;
+}
+
+.suggestions__more {
+    z-index: 999;
+    margin-right: 20px;
+}
+
+.videos {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+}

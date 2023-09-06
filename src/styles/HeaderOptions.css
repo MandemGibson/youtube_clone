@@ -1,0 +1,18 @@
+.headerOptions {
+    display: flex;
+    align-items: center;
+    /* margin-left: 25px; */
+    /* padding-left: 10px; */
+}
+
+.headerOption__icons {
+    object-fit: contain;
+    font-size: 30px !important;
+    color: rgb(37, 36, 36) !important;
+}
+
+.headerOption__profile {
+    height: 35px !important;
+    width: 35px !important;
+    margin-left: 5px;
+}
