@@ -10,7 +10,7 @@ function VidBox({ avatar, title, subtitle, views, count, Icon, imgSrc }) {
         <img src={imgSrc} alt="" />
       </div>
       <div className="below_container">
-        {avatar && <Avatar className="vidbox__avatar" />}
+        {avatar && <Avatar className="vidbox__avatar" src={avatar} />}
         <div className="vidtext">
           <h1>{title}</h1>
           <div className="sub">

@@ -1,0 +1,92 @@
+.login {
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+.youtube-logo {
+    width: 300px;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.login>p {
+    font-size: xx-large;
+    font-weight: 700;
+    align-self: center;
+    margin: 50px;
+    font-style: normal;
+    letter-spacing: 5px;
+}
+
+.login>form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login>form>input {
+    margin-top: 20px;
+    width: 30%;
+    height: 40px;
+    align-self: center;
+    border-radius: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+    font-family: ruby;
+    outline: none;
+    border: 1px solid rgba(215, 0, 0, 0.7)
+}
+
+.errMsg {
+    align-self: normal;
+    margin-left: 35%;
+    color: red;
+    font-style: italic;
+}
+
+.login-btn {
+    margin-top: 15px !important;
+    margin-left: 10px !important;
+    margin-bottom: 15px !important;
+    text-transform: capitalize !important;
+    border-radius: 30px !important;
+    color: gray !important;
+    box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.75);
+    width: 100px !important;
+    align-self: center;
+    background: linear-gradient(to bottom, rgb(224, 37, 37), rgb(172, 71, 45));
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    color: white !important;
+}
+
+.login>span {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.login>span>p {
+    margin-right: 5px;
+}
+
+.login>h5 {
+    align-self: center;
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.google-btn {
+    width: max-content;
+    align-self: center;
+}
+
+.google-btn>img {
+    height: 40px;
+    width: 40px;
+    align-self: center;
+    box-sizing: border-box;
+}

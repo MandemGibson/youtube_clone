@@ -29,7 +29,7 @@ function VideoFeed() {
       </div>
       <div className="videos">
         <VidBox
-          avatar
+          avatar={img1}
           title="Family Guy full episodes"
           subtitle="GibbyTV📺"
           Icon={Verified}
@@ -40,7 +40,7 @@ function VideoFeed() {
           }
         />
         <VidBox
-          avatar
+          avatar="https://th.bing.com/th/id/OIP.BB_zUFkR9b9VL_gOMVHISwHaHa?pid=ImgDet&rs=1"
           title="React JS tutorials for Beginners"
           subtitle="Mandem Gibson"
           Icon={Verified}
