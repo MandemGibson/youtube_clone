@@ -1,9 +1,15 @@
 import React from "react";
 import "../styles/SuggestionBox.css";
 
-function SuggestionBox({ suggestion, selected }) {
+function SuggestionBox({ suggestion, selected, setSelected }) {
+  const handleClick = () => {
+    setSelected(suggestion);
+  };
   return (
-    <div className={`suggestionBox ${selected && "suggestionBox--active"}`}>
+    <div
+      onClick={handleClick}
+      className={`suggestionBox ${selected && "suggestionBox--active"}`}
+    >
       <p>{suggestion}</p>
     </div>
   );

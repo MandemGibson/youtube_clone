@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../src/styles/VideoFeed.css";
 import SuggestionBox from "./components/SuggestionBox";
 import { ArrowForwardIos, Verified } from "@mui/icons-material";
@@ -7,15 +7,41 @@ import { IconButton } from "@mui/material";
 import img1 from "../src/images/profile.jpg";
 
 function VideoFeed() {
+  const [selectedItem, setSelectedItem] = useState("All");
+
+  const handleClick = (item) => {
+    setSelectedItem(item);
+  };
+
   return (
     <div className="videoFeed">
       <div className="suggestionBox__side">
         <div className="suggestions">
-          <SuggestionBox suggestion="All" selected={true} />
-          <SuggestionBox suggestion="Flutter" />
-          <SuggestionBox suggestion="React Js" />
-          <SuggestionBox suggestion="Terateck" />
-          <SuggestionBox suggestion="Recently Played" />
+          <SuggestionBox
+            suggestion="All"
+            selected={selectedItem === "All"}
+            setSelected={handleClick}
+          />
+          <SuggestionBox
+            suggestion="Flutter"
+            selected={selectedItem === "Flutter"}
+            setSelected={handleClick}
+          />
+          <SuggestionBox
+            suggestion="React Js"
+            selected={selectedItem === "React Js"}
+            setSelected={handleClick}
+          />
+          <SuggestionBox
+            suggestion="Terateck"
+            selected={selectedItem === "Terateck"}
+            setSelected={handleClick}
+          />
+          <SuggestionBox
+            suggestion="Recently Played"
+            selected={selectedItem === "Recently Played"}
+            setSelected={handleClick}
+          />
         </div>
         <div className="suggestions__more">
           <IconButton>
